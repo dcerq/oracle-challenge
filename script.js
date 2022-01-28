@@ -26,7 +26,7 @@ codi.addEventListener("click", function criptografar() {
 });
 
 decod.addEventListener("click", function descriptografar(){
-  let texto = textarea.value;
+  let texto = resultado.innerHTML;
   let ufat = /ufat/gi;
   let ober = /ober/gi;
   let ai = /ai/gi;
@@ -40,6 +40,6 @@ resultado.innerHTML = result;
 })
 
 
-copiar.addEventListener("click", function copiar(){
-  navigator.clipboard.write(resultado);
+copiar.addEventListener("click", function copy(){
+  navigator.clipboard.writeText(resultado.innerHTML);
 })
