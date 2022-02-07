@@ -1,13 +1,19 @@
 body{
-  background-color: bisque;
-  font-family: Monospace;
+  background-color: ffffdd;
+  
 }
+ 
+h1{
+  font-family: monospace;
+} 
 
 .btn{
   border: none;
-  padding: 5px 10px;
-  background-color: white;
+  padding: 10px;
+  background-color: black;
+  color: white;
   border-radius: 5px;
+  
 
 }
 
@@ -47,10 +53,14 @@ textarea{
 }
 
 .rodape{
+font-family: monospace;
  position: fixed;
  bottom: 0;
  left: 0;
  width: 100%;
  text-align: 100;
  text-align: center;
+ text-decoration: none;
+ 
 }
+
