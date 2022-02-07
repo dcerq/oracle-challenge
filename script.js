@@ -22,11 +22,12 @@ codi.addEventListener("click", function criptografar() {
   }
   let juntar = teste.join("");
   console.log(juntar);
-  resultado.innerHTML = juntar;
+  resultado.value = juntar;
+  textarea.value = ""
 });
 
 decod.addEventListener("click", function descriptografar(){
-  let texto = resultado.innerHTML;
+  let texto = textarea.value;
   let ufat = /ufat/gi;
   let ober = /ober/gi;
   let ai = /ai/gi;
@@ -36,10 +37,12 @@ decod.addEventListener("click", function descriptografar(){
   let result = texto.replace(ufat, "u").replace(ober, 'o').replace(ai, 'a').replace(imes, 'i').replace(enter, 'e');
   console.log(result);
 
-resultado.innerHTML = result;
+resultado.value = result;
+
 })
 
 
 copiar.addEventListener("click", function copy(){
-  navigator.clipboard.writeText(resultado.innerHTML);
+  navigator.clipboard.writeText(resultado.value);
+  resultado.value = ""
 })

@@ -5,26 +5,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
   <title>Document</title>
 </head>
 
 <body>
-  <main>
-
-    <section>
+  <main class="main">
+    <header>
       <h1>Codificando</h1>
-      <textarea name="nome" id="words" cols="30" rows="10"></textarea>
-      <br>
-      <button id="codificar">Criptografar</button>
-      <button id="decodificar">Descriptografar</button>
-    </section>
-
+    </header>
     <section>
-      <div id="resultado"></div>
-      <button id="copiar">copiar</button>
-    </section>
+      <article>
+        <textarea name="nome" id="words" cols="30" rows="10" style="resize: none;"></textarea>
+        <div class="btns-codificar">
+        <button id="codificar" class="btn">Criptografar</button>
+        <button id="decodificar" class="btn">Descriptografar</button>
+        </div>
+      </article>
 
-    <footer></footer>
+      <article>
+        <textarea class="resultado" id="resultado" cols="30" rows="10" style="resize: none;"></textarea>
+        <div class="btn-decodificar">
+        <button class="btn" id="copiar">copiar</button>
+        </div>
+      </article>
+    </section>
+    <footer class="rodape">
+      <a href="http://">Daiane Cerqueira</a>
+    </footer>
 
   </main>
 
