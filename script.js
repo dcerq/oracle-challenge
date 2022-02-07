@@ -2,6 +2,7 @@ const codi = document.querySelector("#codificar");
 const decod = document.querySelector("#decodificar");
 const textarea = document.querySelector("#words");
 const resultado = document.querySelector("#resultado");
+const copiar = document.querySelector("#copiar");
 
 
 codi.addEventListener("click", function criptografar() {
